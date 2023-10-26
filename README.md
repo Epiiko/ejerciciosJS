@@ -1,6 +1,6 @@
 # ejerciciosJS
 En este repositorio subiré ejercicios variados de JavaScript
-##Indice:
+##Indice: \/n
 #Vip :🥇 Index.html
 1-Primer Tirmerstre
   1.a -Ejercicios basicos
