@@ -1,0 +1,15 @@
+body{
+    background-color: blue;
+}
+.uno{
+    background-color: whitesmoke;
+    border: solid black 4px;
+    color: red;
+    font-size: 2rem;
+}
+.dos{
+    background-color: black;
+    border: solid white 4px;
+    color: white;
+    font-size: 3rem;
+}

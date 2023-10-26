@@ -1,0 +1,10 @@
+button{
+    color: white;
+    font-size: 2rem;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}

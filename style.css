@@ -1,0 +1,32 @@
+html, body {
+    font-family: "Space Grotesk", sans-serif;
+  }
+body {
+    text-align: center;
+    font-weight: bold;
+    background-color: whitesmoke;
+    
+}
+h1{
+    padding-top: 5%;
+}
+table{
+    margin-top: 7%;
+    table-layout: fixed;
+    box-shadow: 5px 5px 10px;
+}
+button{
+    background-color: rgb(255, 255, 255);
+    border: rgb(0, 0, 0) solid 2px;
+    color: rgb(0, 0, 0);
+    border-radius: 10%;
+    font-weight: bold;
+}
+td{
+    vertical-align: middle;
+}
+.rel1{
+    background-color: white;
+    
+}
+

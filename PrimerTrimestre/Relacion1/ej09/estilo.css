@@ -1,0 +1,9 @@
+body{
+    background-color: blue;
+}
+.uno{
+    background-color: white;
+    border: solid black 4px;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+}
