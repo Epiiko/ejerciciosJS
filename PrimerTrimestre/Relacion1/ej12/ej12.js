@@ -9,3 +9,17 @@
 // c) Realizar el mismo ejercicio pero esta vez la imagen se moverá hacia la derecha
 // mientras el ratón esté encima de ella. Coloca un botón para resetear los valores de
 // posición de la imagen
+let imagen=document.querySelector("div");
+document.querySelectorAll("button")[1].addEventListener('click', function(){
+    let posizqd=parseInt(imagen.style.left);
+    imagen.style.setProperty("left",( posizqd+5 )+ "px") ;
+});
+document.querySelectorAll("button")[0].addEventListener('click', function(){
+    let posizqd=parseInt(imagen.style.left);
+    if(posizqd>=0){
+    imagen.style.setProperty("left",( posizqd-5 )+ "px") ;
+    }else{
+        console.log("chocaste")
+    }
+    
+});
