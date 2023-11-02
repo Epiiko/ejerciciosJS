@@ -9,17 +9,41 @@
 // c) Realizar el mismo ejercicio pero esta vez la imagen se moverá hacia la derecha
 // mientras el ratón esté encima de ella. Coloca un botón para resetear los valores de
 // posición de la imagen
-let imagen=document.querySelector("div");
-document.querySelectorAll("button")[1].addEventListener('click', function(){
-    let posizqd=parseInt(imagen.style.left);
-    imagen.style.setProperty("left",( posizqd+5 )+ "px") ;
+// salto = 
+let imagen = document.querySelector("div");
+let salto = parseInt(prompt("introduce"));
+document.querySelectorAll("button")[1].addEventListener("click", function () {
+  let posizqd = parseInt(imagen.style.left);
+  let movimiento;
+  if (window.innerWidth - (imagen.offsetWidth + posizqd) >= salto) {
+    movimiento = posizqd + salto;
+    //console.log("sumo")
+  } else {
+    let resto = window.innerWidth - (imagen.offsetWidth + posizqd);
+    movimiento = posizqd + resto;
+
+    console.log("chochaste");
+  }
+  imagen.style.setProperty("left", movimiento + "px");
+
+  /*
+  if (imagen.offsetWidth < document.body.offsetWidth - (posizqd + salto)) {
+    imagen.style.setProperty("left", posizqd + salto + "px");
+    //console.log("sumo")
+  } else {
+    imagen.style.setProperty("left", posizqd + salto + "px");
+    alert ("chocaste")
+  }
+  */
 });
-document.querySelectorAll("button")[0].addEventListener('click', function(){
-    let posizqd=parseInt(imagen.style.left);
-    if(posizqd>=0){
-    imagen.style.setProperty("left",( posizqd-5 )+ "px") ;
-    }else{
-        console.log("chocaste")
-    }
-    
+document.querySelectorAll("button")[0].addEventListener("click", function () {
+  let posizqd = parseInt(imagen.style.left);
+  if (posizqd >= salto) {
+    imagen.style.setProperty("left", posizqd - salto + "px");
+  } else {
+    alert("chocaste");
+  }
+});
+document.querySelectorAll("button")[2].addEventListener("click", function () {
+  imagen.style.setProperty("left", " 0px");
 });
