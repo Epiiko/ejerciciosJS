@@ -12,10 +12,12 @@ let ganador = "";
 let coches = document.querySelectorAll("div");
 document.querySelector("#inicio").addEventListener("click", function () {
   carrera();
+ document.querySelector("#inicio").disabled=true;
 });
 document.querySelector("#reset").addEventListener("click", function(){
     restart();
     clearInterval(timer);
+    document.querySelector("#inicio").disabled=false;
 })
 function carrera() {
    timer= setInterval("movercoches()", 2);

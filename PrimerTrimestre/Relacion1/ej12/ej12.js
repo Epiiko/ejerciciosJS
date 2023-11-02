@@ -21,8 +21,7 @@ document.querySelectorAll("button")[1].addEventListener("click", function () {
   } else {
     let resto = window.innerWidth - (imagen.offsetWidth + posizqd);
     movimiento = posizqd + resto;
-
-    console.log("chochaste");
+    alert("chochaste");
   }
   imagen.style.setProperty("left", movimiento + "px");
 
@@ -42,6 +41,7 @@ document.querySelectorAll("button")[0].addEventListener("click", function () {
     imagen.style.setProperty("left", posizqd - salto + "px");
   } else {
     alert("chocaste");
+    imagen.style.left=0;
   }
 });
 document.querySelectorAll("button")[2].addEventListener("click", function () {
