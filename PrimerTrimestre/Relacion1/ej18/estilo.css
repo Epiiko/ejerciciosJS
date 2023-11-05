@@ -1,0 +1,15 @@
+div label{
+    font-size: 2rem;
+}
+
+body{
+    background-image: url("img/Verstappen.gif");
+    background-size: cover;
+}
+.monedas{
+    background-color: rgba(154, 154, 178, 0.804);
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
