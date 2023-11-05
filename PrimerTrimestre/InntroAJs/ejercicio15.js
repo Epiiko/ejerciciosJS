@@ -25,7 +25,7 @@ function pedirMesa() {
     let comensales = 0;
     do {
         if (comensales > 4) {
-            alert("El numero debe de ser entre 1-4 no aceptamos a grupos superiores");
+            alert("El numero debe de ser entre 1-4 no acojemos a grupos superiores");
             comensales = prompt("Introduzca el numero de comensales");
         } else {
             comensales = prompt("Introduzca el numero de comensales");
