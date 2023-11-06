@@ -16,12 +16,17 @@ document.querySelectorAll("button")[1].addEventListener("click", function () {
   let posizqd = parseInt(imagen.style.left);
   let movimiento;
   if (window.innerWidth - (imagen.offsetWidth + posizqd) >= salto) {
-    movimiento = posizqd + salto;
+    movimiento = posizqd + salto; 
+    document.querySelectorAll("button")[0].disabled=false;
     //console.log("sumo")
   } else {
     let resto = window.innerWidth - (imagen.offsetWidth + posizqd);
     movimiento = posizqd + resto;
-    alert("chochaste");
+    this.disabled=true;
+    setTimeout(() => {
+      alert("chochaste");
+    }, 500)
+
   }
   imagen.style.setProperty("left", movimiento + "px");
 
@@ -39,9 +44,13 @@ document.querySelectorAll("button")[0].addEventListener("click", function () {
   let posizqd = parseInt(imagen.style.left);
   if (posizqd >= salto) {
     imagen.style.setProperty("left", posizqd - salto + "px");
+    document.querySelectorAll("button")[1].disabled=false;
   } else {
-    alert("chocaste");
-    imagen.style.left=0;
+    imagen.style.left = 0;
+    this.disabled=true;
+    setTimeout(() => {
+      alert("chochaste");
+    }, 500)
   }
 });
 document.querySelectorAll("button")[2].addEventListener("click", function () {
