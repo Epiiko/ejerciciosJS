@@ -20,7 +20,7 @@ document.querySelectorAll("input")[1].addEventListener("click", function () {
             if (tempposi < 1 || tempposi > listado.length + 1) {
                 posi = -3;
             } else {
-                posi = tempposi - 1;
+                posi = tempposi - 1; 
                 if (posi == 3) {
                     anadirAlFondo(textoli);
                 } else {

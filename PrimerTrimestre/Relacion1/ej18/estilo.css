@@ -13,3 +13,51 @@ body{
     font-weight: bold;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
+.duros{
+    background-color: rgba(255, 255, 255, 0.804);
+}
+.duros progress{
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+.medios,.duros,.blandos{ 
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 300px;
+    height: 300px;
+}
+.medios progress,.blandos progress,.duros progress{
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+.container{
+    width: 70% !important;
+}
+.medios{
+     background-color: rgba(201, 185, 161, 0.804);
+}
+.blandos{
+    background-color: rgba(242, 130, 130, 0.804);
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.inicio{
+    background-image: url("img/race-flag-15.gif") ;
+    background-color: rgba(0, 0, 0, 0.27);
+    background-size: contain;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+}
+.inicio label{
+    background-color: rgba(0, 0, 0, 0.376);
+
+    
+}
