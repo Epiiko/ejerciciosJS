@@ -1,0 +1,19 @@
+#grande{
+    width: 80%;
+    height: 80vh;
+    background-color: blue;
+    display: block;
+}
+#resultados{
+    width: 78.4%;
+    background-color: black;
+    position: absolute;
+    bottom: 1;
+    display: flex;
+    justify-content: space-between;
+}
+#resultados div{
+    background-color: rgb(255, 0, 0);
+    padding: 3%;
+    color: white;
+}

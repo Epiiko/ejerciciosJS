@@ -13,7 +13,6 @@
 // b) Mejora el ejercicio anterior de modo que funcione para cualquier imagen que haya en
 // una página.  Al hacer click sobre cualquiera de las imágenes de la página, esta aparece
 // con su tamaño original dentro de la capa semitransparente que lo cubre todo.
-const imgorig = document.querySelector("img");
 document.querySelectorAll("img").forEach((elemento) => {
     elemento.addEventListener("click", function () {
         if (elemento != document.querySelector("div img")) {
@@ -27,8 +26,8 @@ document.querySelectorAll("img").forEach((elemento) => {
             temp.removeAttribute("height");
             div.appendChild(temp);
             document.body.appendChild(div);
-            div.addEventListener("click", function (ev) {
-                if (ev.target != document.querySelector("div img")) {
+            div.addEventListener("click", function () {
+                if (this != document.querySelector("div img")) {
                     document.body.removeChild(document.querySelector("div"));
                     elemento.height = 360;
                     elemento.width = 640;
