@@ -1,6 +1,6 @@
 lista = document.querySelectorAll("input[type='checkbox']");
 lista.forEach((ele) =>
-  ele.addEventListener("click", function (ev) {
+  ele.addEventListener("click", function () {
     let campoTexto=document.querySelector("textarea");
     campoTexto.value = "";
     lista.forEach(element => {
