@@ -58,11 +58,13 @@ function validarWeb() {
         alert("La web es obligatoria");
         return false;
     } else {
-        // if(web.value.substring(0,7)!="https://"){
-        //     alert("La web debe empezar por https://")
-        //     return false;
-        // }
-        return true;
+        if (web.value.substring(0, 8) != "https://") {
+            alert("La web debe empezar por https://")
+            return false;
+        } else {
+            return true;
+        }
+
     }
 }
 function validarPass() {
@@ -79,59 +81,32 @@ function validarPass() {
 
     }
 }
-
-
-
-
 //Validacion+Envio
 document.querySelector("input[name='enviar']").addEventListener("click", function () {
-    // if (validarDni()) {
-    //     if (validarNombre()) {
-    //         if (validarApellido()) {
-    //             if (validarNacimiento()) {
-    //                 if (validarWeb()) {
-    //                     if (validarPass()) {
-    //                         alert("Formulario enviado");
-    //                         location.href = "exito.html"
-    //                     } else {
-    //                         pass.focus();
-    //                     }
-    //                 } else {
-    //                     web.focus();
-    //                 }
-    //             } else {
-    //                 nacimiento.focus();
-    //             }
-    //         } else {
-    //             apellidos.focus();
-    //         }
-    //     } else {
-    //         nombre.focus();
-    //     }
-    // } else {
-    //     dni.focus();
-    // };
-
     if (!validarDni()) {
         dni.focus();
         return;
     }
-    if (!validarNombre) {
+    if (!validarNombre()) {
         nombre.focus();
         return;
     }
-    if(!validarApellido){
+    if (!validarApellido()) {
         apellidos.focus();
         return;
     }
-    if(!validarNacimiento){
+    if (!validarNacimiento()) {
         nacimiento.focus();
         return;
     }
-    if(!validarPass){
+    if(!validarWeb()){
+        web.focus();
+        return;
+    }
+    if (!validarPass()) {
         pass.focus();
         return;
     }
     alert("Formulario enviado");
-    location.href="exito.html"
+    location.href = "exito.html"
 })

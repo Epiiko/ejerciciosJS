@@ -1,7 +1,6 @@
 window.onload = () => {
   const origen = "libros.json";
   let salida = document.querySelector("section");
-
   // creo el objeto
   xhr = new XMLHttpRequest();
   //hago la peticion
