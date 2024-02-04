@@ -11,6 +11,9 @@ body{
 #title{
     width: 50%;
 }
+a{
+text-decoration: none;
+}
 .nav_bar{
     background-color: rgb(0, 0, 0);
     padding-top: 2%;
@@ -48,19 +51,21 @@ body{
     min-height: 1000px;
     text-align: center;
 }
-.houses{
+.container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .card{
     background-color: rgba(240, 248, 255, 0);
-    height: fit-content;
-    width: fit-content;   
     text-align: center;
     margin: 5%;
 }
 .card:hover{
     background-color: whitesmoke;
+    
+}
+.card:hover h3{
+    color: black;
 }
 .subtitle{
     margin-top: 5%;
@@ -70,16 +75,23 @@ body{
     margin-bottom: 5%;
     
 }
+.footer_content{
+    color: white;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-size: 2rem;
+}
 .text{
     color: rgb(248, 246, 246);
     font-family: Game of Thrones;
-    background-color: black;
     font-size: 1.5rem;
-    width: fit-content;
-
 }
 .houses_logos{
-    width: 50%;
+    width: 60%;
+    height: 65%;
+}
+p{
+    color: whitesmoke;
 }
 
 
