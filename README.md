@@ -2,7 +2,7 @@
 
 En este repositorio subiré ejercicios variados de JavaScript
 
-##Indice: \/n
+##Indice:
 
 #Vip :🥇 Index.html
 
